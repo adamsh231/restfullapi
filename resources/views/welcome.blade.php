@@ -3,16 +3,17 @@
 
 <head>
     <title>Hello, world!</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
 <body>
-    <div class="container-fluid" style="margin-left: 40%; margin-top: 10%">
+    <div id="app" class="container-fluid" style="margin-left: 40%; margin-top: 10%">
+
         <div class="card" style="width: 18rem;">
             <img src="https://picsum.photos/seed/picsum/300/200" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <example-component></example-component>
             </div>
         </div>
     </div>
