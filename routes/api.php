@@ -12,9 +12,9 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('/user', 'Api\UserController@user');
 
 Route::group(['middleware' => ['auth:api']], function () {
-    Route::get('/user', 'Api\UserController@user');
     Route::get('/user/{user}', 'Api\UserController@userById')->where('user', '[0-9]+');
     Route::patch('/user/{user}', 'Api\UserController@updateUser')->where('user', '[0-9]+');
     Route::delete('/user/{user}', 'Api\UserController@deleteUser')->where('user', '[0-9]+');

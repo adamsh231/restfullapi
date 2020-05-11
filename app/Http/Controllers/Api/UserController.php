@@ -12,7 +12,7 @@ class UserController extends Controller
 
     public function user()
     {
-        $user = User::paginate(10);
+        $user = User::paginate(20);
         return response()->json($user);
         // return new UserResource($user);
     }

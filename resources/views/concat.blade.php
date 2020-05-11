@@ -16,7 +16,7 @@
                 </div>
                 <div class="card-body">
                     <div style="margin: 0 auto">
-                        <example-component></example-component>
+                        <concat></concat>
                     </div>
                 </div>
             </div>
